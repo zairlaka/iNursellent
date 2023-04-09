@@ -1,0 +1,9 @@
+class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :invitable, :database_authenticatable, :registerable, :confirmable,
+         :recoverable, :rememberable, :validatable, :timeoutable,:invitable
+
+  enum role: %w[user client lead]
+
+end
