@@ -1,9 +1,10 @@
-class HomeController < ApplicationController
+class HomeController < ActionController::Base
 
   def index
-    if current_user.role == "user"
+    return  current_user.nil?
+    if current_user&.role == "user"
       redirect_to nurse_dashboard_index_path
-    elsif current_user.role == "admin"
+    elsif current_user&.role == "admin"
       # redirect_to admin_team_index_path
     end
   end

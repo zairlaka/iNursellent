@@ -9,11 +9,19 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
+  resources :users, only: [:edit, :update] do
+    get :send_signup_code
+  end 
+
+
   ############################################################
   #                    Nurse                                 #
   ############################################################
   namespace :nurse do
     resources :dashboard, only: :index
+    resources :experiences, only: :index
+    resources :details, only: :index
+    
   end
 
 end
