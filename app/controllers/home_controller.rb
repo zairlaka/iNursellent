@@ -1,5 +1,5 @@
 class HomeController < ActionController::Base
-
+  layout "application"
   def index
     return  current_user.nil?
     if current_user&.role == "user"
