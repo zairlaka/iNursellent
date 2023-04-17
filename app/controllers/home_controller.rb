@@ -8,5 +8,7 @@ class HomeController < ActionController::Base
       # redirect_to admin_team_index_path
     end
   end
+
+  def professionals;end
   
 end

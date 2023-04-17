@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   devise_scope :user do
     root to: "home#index"
+    get "professionals" => "home#professionals"
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
