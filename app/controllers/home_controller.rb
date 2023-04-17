@@ -9,6 +9,6 @@ class HomeController < ActionController::Base
     end
   end
 
-  def professionals;end
+  def professionals;end 
   
 end
