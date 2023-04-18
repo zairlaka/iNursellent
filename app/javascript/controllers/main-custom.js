@@ -176,9 +176,6 @@ $('.custom_input').change(function () {
 });
 
 
-
-
-
 $(document).ready(function() {
     // hide all steps except the first one
     $('.step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9, .step-10, .step-11, .step-12, .step-13, .step-14, .step-15, .step-16, .step-17, .step-18, .step-19, .step-20, .step-21').hide();

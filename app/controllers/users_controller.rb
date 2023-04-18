@@ -3,10 +3,6 @@ class UsersController < ApplicationController
 
   def edit; end
 
-  def create
-    
-  end
-
   def update
     if @user.update(user_params)
       flash[:success] = "Password Changed Successfully! Please sign in again with the new password."
