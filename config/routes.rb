@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get 'sign_up' => "home#sign_up"
   devise_scope :user do
     root to: "home#index"
     get "professionals" => "home#professionals"

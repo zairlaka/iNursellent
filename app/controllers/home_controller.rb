@@ -9,6 +9,10 @@ class HomeController < ActionController::Base
     end
   end
 
-  def professionals;end 
+  def sign_up
+    @user = User.new
+  end
+
+  def professionals; end 
   
 end

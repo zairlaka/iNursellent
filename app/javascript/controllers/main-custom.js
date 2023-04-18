@@ -322,42 +322,42 @@ $("#imageUpload").change(function() {
     readURL(this);
 });
 
-$(document).ready(function () {
-    var myData = ['apple', 'banana', 'banana0', 'banana1', 'banana2', 'banana3', 'banana4', 'banana5', 'cherry', 'durian', 'elderberry'];
-    var myInput = $('#my-input');
+// $(document).ready(function () {
+//     var myData = ['apple', 'banana', 'banana0', 'banana1', 'banana2', 'banana3', 'banana4', 'banana5', 'cherry', 'durian', 'elderberry'];
+//     var myInput = $('#my-input');
 
-    myInput.typeahead({
-        hint: true,
-        highlight: true,
-        minLength: 1
-    },
-        {
-            name: 'my-data',
-            source: substringMatcher(myData)
-        });
+//     myInput.typeahead({
+//         hint: true,
+//         highlight: true,
+//         minLength: 1
+//     },
+//         {
+//             name: 'my-data',
+//             source: substringMatcher(myData)
+//         });
 
-    function substringMatcher(strs) {
-        return function findMatches(q, cb) {
-            var matches, substringRegex;
+//     function substringMatcher(strs) {
+//         return function findMatches(q, cb) {
+//             var matches, substringRegex;
 
-            // an array that will be populated with substring matches
-            matches = [];
+//             // an array that will be populated with substring matches
+//             matches = [];
 
-            // regex used to determine if a string contains the substring `q`
-            substringRegex = new RegExp(q, 'i');
+//             // regex used to determine if a string contains the substring `q`
+//             substringRegex = new RegExp(q, 'i');
 
-            // iterate through the pool of strings and for any string that
-            // contains the substring `q`, add it to the `matches` array
-            $.each(strs, function (i, str) {
-                if (substringRegex.test(str)) {
-                    matches.push(str);
-                }
-            });
+//             // iterate through the pool of strings and for any string that
+//             // contains the substring `q`, add it to the `matches` array
+//             $.each(strs, function (i, str) {
+//                 if (substringRegex.test(str)) {
+//                     matches.push(str);
+//                 }
+//             });
 
-            cb(matches);
-        };
-    }
-})
+//             cb(matches);
+//         };
+//     }
+// })
 
 
 // EMPLAYER DROPDOWN

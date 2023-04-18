@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
   before_action :get_user
 
-  def edit
+  def edit; end
+
+  def create
+    
   end
 
   def update
