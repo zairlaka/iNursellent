@@ -6,4 +6,9 @@ class User < ApplicationRecord
 
   enum role: %w[user client lead]
 
+  has_one :detail
+  has_many :experiences
+
+  has_one_attached :profile_pic
+
 end
